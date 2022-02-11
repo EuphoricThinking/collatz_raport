@@ -197,7 +197,7 @@ def solo_stats(team_contest):
     #return x_axis, stddev, minT, maxT, avr
     return res
 
-def plot_contest_for_team(contest, team, stats):
+def plot_contest_for_team(contest, team, stats, where):
     plt.figure()
     team_stats = stats[team]
     team_contest = team_stats[contest]
@@ -209,17 +209,19 @@ def plot_contest_for_team(contest, team, stats):
     plt.figure()
     plt.xlabel('Rozmiar ziarna\n[Liczba danych]')
     plt.ylabel('Czas [us]')
-    plt.title(contest + ' dla ' + team + ' na laptopie')
+    plt.title(contest + ' dla ' + team + ' na ' + where)
 
     colours = ['r', 'b', 'c', 'g', 'y', 'k']
     for ind, num_worker in enumerate(for_num_workers.keys()):
         print(ind)
         x_axis, stddev, minT, maxT, avr = for_num_workers[num_worker]
 
-        plt.plot(x_axis, minT, colours[ind] + 'o')
-        plt.plot(x_axis, maxT, colours[ind] + '^')
-        plt.plot(x_axis, avr, colours[ind])
+        plt.plot(x_axis, minT, colours[ind] + 'o', label='Min czas, liczba wątków: ' + str(num_worker))
+        plt.plot(x_axis, maxT, colours[ind] + '^', label='Max czas, liczba wątków: ' + str(num_worker))
+        plt.plot(x_axis, avr, colours[ind], label='Średni czas, liczba wątków: ' + str(num_worker))
 
+    #plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+    plt.legend(loc='upper left')
     # plt.plot(x_axis, minT, 'ro')
     # plt.plot(x_axis, maxT, 'r^')
     # plt.plot(x_axis, avr, 'r')
@@ -249,7 +251,7 @@ if __name__ == '__main__':
     s3_stats = prepare_stats(s3_res)
 
    # create_total_diagram(m1_stats, m2_stats, m3_stats, s1_stats, s2_stats, s3_stats)
-    plot_contest_for_team('LongNumber', 'ThreadNewThreads', m1_stats)
+    plot_contest_for_team('LongNumber', 'TeamPool', s1_stats, 'studentsie')
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
