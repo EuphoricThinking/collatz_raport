@@ -1,5 +1,7 @@
 import argparse
 import re
+import matplotlib.pyplot as plt
+import numpy as np
 
 """When the program terminates, the timer will send a report
 of the following form to std:cerr
@@ -123,14 +125,30 @@ def prepare_stats(lines):
 
     print("Total")
     total = extract_doubles(lines[-1])
-    total[-1] = int(total[-1])
-    final['Total'] = {}
-    final['Total']['stats'] = total
+    #total[-1] = int(total[-1])
+    #total = total[:-1]
+    total = total[0]
+    #final['Total'] = {}
+    #final['Total']['stats'] = total
+    final['Total'] = total
 
     print(total)
 
     return final
 # Press the green button in the gutter to run the script.
+
+def create_total_diagram(m1, m2, m3, s1, s2, s3):
+    plt.figure()
+    names = ['Pierwsza_proba', 'Druga_proba', 'Trzecia_proba']
+    m_val = [m1['Total'], m2['Total'], m3['Total']]
+    print(m_val)
+    s_val = [s1['Total'], s2['Total'], s3['Total']]
+    plt.plot(names, m_val, 'ro', label='laptop')
+    plt.plot(names, s_val, 'bo', label='students')
+    plt.title('Całkowity czas obliczeń na dwóch środowiskach')
+    plt.ylabel('Czas [min]')
+    plt.show()
+
 if __name__ == '__main__':
     m1, m2, m3, s1, s2, s3 = command_line_args()
 
@@ -150,6 +168,8 @@ if __name__ == '__main__':
     s1_stats = prepare_stats(s1_res)
     s2_stats = prepare_stats(s2_res)
     s3_stats = prepare_stats(s3_res)
+
+    create_total_diagram(m1_stats, m2_stats, m3_stats, s1_stats, s2_stats, s3_stats)
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
