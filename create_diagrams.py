@@ -48,8 +48,8 @@ def extract_outer_data(outer_stat):
     halves = outer_stat.split(':')
     res = [int(i) for i in re.findall('\d+', halves[0])]
     find_contest = halves[0].split('|')[0].split('[')[1].rstrip(' ')
-    print(find_contest)
-    print(res)
+    #print(find_contest)
+    #print(res)
     res.append(find_contest)
     return res + extract_doubles(halves[1])
 
@@ -81,6 +81,10 @@ def prepare_stats(lines):
             print(extracted_outer)
             index += 2
 
+    print("Total")
+    total = extract_doubles(lines[-1])
+    total[-1] = int(total[-1])
+    print(total)
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
