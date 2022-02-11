@@ -242,7 +242,7 @@ def convert_to_ms(val, unit):
     else:
         return val
 
-def compare_mean_contests(stats, contest_name):
+def compare_mean_contests(stats, contest_name, where):
     contest_res_per_team = {}
 
     for team in stats.keys():
@@ -278,24 +278,28 @@ def compare_mean_contests(stats, contest_name):
         print(key, val)
 
     colours = ['r', 'b', 'c', 'g', 'k', 'y', 'm']
-    plt.title(contest_name + " - średni czas dla wszystkich zespołów")
+    plt.title(contest_name + " - średni czas dla wszystkich zespołów na " + where)
     plt.xlabel("Dane inicjujące")
     plt.ylabel("Czas [ms]")
 
     x_list = [str(i) for i in setSeeds]
-    means_all = []
+    means23 = {}
     for ind, team in enumerate(meansTeams.keys()):
         to_plot = []
         team_means = meansTeams[team]
         for rec in team_means:
             to_plot.append(rec[1])
-            means_all.append(rec[1])
+            if rec[0] == 23:
+                means23[team] = rec[1]
         print(ind, team)
         plt.plot(x_list, to_plot, colours[ind] + '-*', label = team)
 
     plt.legend(loc='upper left')
-
     plt.tick_params(labelright=True)
+
+    for key, val in means23.items():
+        print(key, val)
+
     plt.show()
 
 if __name__ == '__main__':
@@ -320,7 +324,7 @@ if __name__ == '__main__':
 
    # create_total_diagram(m1_stats, m2_stats, m3_stats, s1_stats, s2_stats, s3_stats)
     #plot_contest_for_team('LongNumber', 'TeamPool', s1_stats, 'studentsie')
-    compare_mean_contests(m1_stats, "LongNumber")
+    compare_mean_contests(m1_stats, "LongNumber", "laptopie")
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

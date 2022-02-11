@@ -1,0 +1,7 @@
+TeamSolo 6759.13
+ThreadNewThreads 8478.835
+TeamConstThreads 2731.269
+TeamPool 2903.2942
+TeamNewProcesses 136782.8333
+TeamConstProcesses 2667.6587
+TeamAsync 1251.01
