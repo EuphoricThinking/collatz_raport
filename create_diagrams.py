@@ -160,12 +160,59 @@ def create_total_diagram(m1, m2, m3, s1, s2, s3):
     plt.legend(loc='center right')
     plt.show()
 
-def plot_contest_for_team(contest, m1, s1, team, stats):
+def solo_stats(team_contest):
+    # x_axis = []
+    # stddev = []
+    # minT = []
+    # maxT = []
+    # avr = []
+
+    res = {}
+    for workers in team_contest:
+        num_workers = workers[0]
+        if num_workers not in res.keys():
+            res[num_workers] = [[],[],[],[],[]] #x_axis, std, min, max, avr
+        # x_axis = []
+        # stddev = []
+        # minT = []
+        # maxT = []
+        # avr = []
+ #       for contest in team_contest:
+        print(workers)
+        cur_work = res[num_workers]
+        work_stats = workers[2]
+        solo_work = work_stats['solo']
+        # x_axis.append(str(workers[1]) + '\n[' + str(solo_work[-1]) + ']')
+        # minT.append(solo_work[2])
+        # maxT.append(solo_work[3])
+        # avr.append(solo_work[0])
+        # stddev.append(solo_work[1])
+        cur_work[0].append(str(workers[1]) + '\n[' + str(solo_work[-1]) + ']')
+        cur_work[2].append(solo_work[2])
+        cur_work[3].append(solo_work[3])
+        cur_work[4].append(solo_work[0])
+        cur_work[1].append(solo_work[1])
+
+
+    #return x_axis, stddev, minT, maxT, avr
+    return res
+
+def plot_contest_for_team(contest, team, stats):
     plt.figure()
     team_stats = stats[team]
     team_contest = team_stats[contest]
 
-    #for workers in team_contest
+    #x_axis, stddev, minT, maxT, avr = solo_stats(team_contest)
+    for_num_workers = solo_stats(team_contest)
+
+    x_axis, stddev, minT, maxT, avr = for_num_workers[1]
+    plt.figure()
+    plt.xlabel('Rozmiar ziarna\n[Liczba danych]')
+    plt.ylabel('Czas [us]')
+    plt.title(contest + ' dla ' + team + ' na laptopie')
+    plt.plot(x_axis, minT, 'ro', label='Pierwsza próba')
+    plt.show()
+
 
 
 if __name__ == '__main__':
@@ -188,7 +235,8 @@ if __name__ == '__main__':
     s2_stats = prepare_stats(s2_res)
     s3_stats = prepare_stats(s3_res)
 
-    create_total_diagram(m1_stats, m2_stats, m3_stats, s1_stats, s2_stats, s3_stats)
+   # create_total_diagram(m1_stats, m2_stats, m3_stats, s1_stats, s2_stats, s3_stats)
+    plot_contest_for_team('LongNumber', 'ThreadNewThreads', m1_stats)
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
