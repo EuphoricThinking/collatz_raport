@@ -58,19 +58,38 @@ def prepare_stats(lines):
     range_lines = len(lines)
     index = 0
 
+    final = {}
+
     while index < range_lines - 1:
         current_team = lines[index]
         print(current_team)
 
+        if current_team not in final.keys():
+            final[current_team] = {}
+
         if current_team != "TeamNewProcesses" and current_team != "TeamConstProcesses":
             inner_stats = lines[index + 1]
             outer_stats = lines[index + 2]
+            print(outer_stats)
             #extracted_inner = extract_inner_timer(inner_stats)
             extracted_inner = extract_doubles(inner_stats)
             extracted_inner[-1] = int(extracted_inner[-1])
             print(extracted_inner)
             extracted_outer = extract_outer_data(outer_stats)
             extracted_outer[-1] = int(extracted_outer[-1])
+
+            stats = {}
+            stats['solo'] = extracted_inner
+            stats['total'] = extracted_outer[3:]
+            comp_name = extracted_outer[2]
+
+            if comp_name not in final[current_team].keys():
+                final[current_team][comp_name] = {}
+
+            current_comp = final[current_team][comp_name]
+            current_comp['num_workers'] = extracted_outer[0]
+            current_comp['seed'] = extracted_outer[1]
+            current_comp['stats'] = stats
             print(extracted_outer)
             index += 3
 
@@ -78,12 +97,29 @@ def prepare_stats(lines):
             outer_stats = lines[index + 1]
             extracted_outer = extract_outer_data(outer_stats)
             extracted_outer[-1] = int(extracted_outer[-1])
+
+            stats = {}
+            stats['solo'] = None
+            stats['total'] = extracted_outer[3:]
+            comp_name = extracted_outer[2]
+
+            if comp_name not in final[current_team].keys():
+                final[current_team][comp_name] = {}
+
+            current_comp = final[current_team][comp_name]
+            current_comp['num_workers'] = extracted_outer[0]
+            current_comp['seed'] = extracted_outer[1]
+            current_comp['stats'] = stats
+
             print(extracted_outer)
             index += 2
 
     print("Total")
     total = extract_doubles(lines[-1])
     total[-1] = int(total[-1])
+    final['Total'] = {}
+    final['Total']['stats'] = total
+    
     print(total)
 
 # Press the green button in the gutter to run the script.
