@@ -2,6 +2,7 @@ import argparse
 import re
 import matplotlib.pyplot as plt
 import numpy as np
+import statistics
 
 """When the program terminates, the timer will send a report
 of the following form to std:cerr
@@ -109,6 +110,8 @@ def prepare_stats(lines):
             extracted_outer = extract_outer_data(outer_stats)
             extracted_outer[-1] = int(extracted_outer[-1])
 
+            unitNum = outer_stats.split(',')[1].split()[2]
+            unit = re.findall('\d+', unitNum)
             stats = {}
             stats['solo'] = None
             stats['total'] = extracted_outer[3:]
@@ -122,7 +125,7 @@ def prepare_stats(lines):
             # current_comp['seed'] = extracted_outer[1]
             # current_comp['stats'] = stats
             #current_comp[extracted_outer[0]] = [extracted_outer[1], stats]
-            current_comp.append([extracted_outer[0], extracted_outer[1], stats])
+            current_comp.append([extracted_outer[0], extracted_outer[1], stats]) #num threads, seed, {solo, total}
 
             print(extracted_outer)
             index += 2
@@ -228,7 +231,40 @@ def plot_contest_for_team(contest, team, stats, where):
 
     plt.show()
 
+def compare_mean_contests(stats, contest_name):
+    contest_res_per_team = {}
 
+    for team in stats.keys():
+        #print(team)
+        if team != 'Total':
+            contest_res_per_team[team] = stats[team][contest_name]
+
+    for key, val in contest_res_per_team.items():
+        print(key, val)
+
+    setSeeds = set()
+    for elem in contest_res_per_team['TeamSolo']:
+        setSeeds.add(elem[1])
+
+    print(setSeeds)
+
+    meansTeams = {}
+    for team in contest_res_per_team.keys():
+        cur_team = contest_res_per_team[team]
+
+        for seed in setSeeds:
+            to_mean = []
+            for record in cur_team:
+                if record[1] == seed:
+                    print('hete', record[2])
+                    to_mean.append(record[2]['total'][0])
+            print(to_mean)
+            if team not in meansTeams.keys():
+                meansTeams[team] = []
+            meansTeams[team].append([seed, statistics.mean(to_mean)])
+
+    for key, val in meansTeams.items():
+        print(key, val)
 
 if __name__ == '__main__':
     m1, m2, m3, s1, s2, s3 = command_line_args()
@@ -251,7 +287,8 @@ if __name__ == '__main__':
     s3_stats = prepare_stats(s3_res)
 
    # create_total_diagram(m1_stats, m2_stats, m3_stats, s1_stats, s2_stats, s3_stats)
-    plot_contest_for_team('LongNumber', 'TeamPool', s1_stats, 'studentsie')
+    #plot_contest_for_team('LongNumber', 'TeamPool', s1_stats, 'studentsie')
+    compare_mean_contests(m1_stats, "LongNumber")
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
