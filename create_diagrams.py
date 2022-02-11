@@ -44,30 +44,15 @@ def extract_doubles(line):
     #return [float(i) for i in re.findall('\d+\.\d+', line)]
     return [float(i) for i in re.findall('\d+\.*\d*', line)]
 
-def extract_inner_timer(inner_stat):
-    partial = inner_stat.split(',')
-    print(inner_stat, partial)
-    res = [extract_doubles(partial[0])[0]]
-    res.append(extract_doubles(partial[1])[0])
-    for el in extract_doubles(partial[2]):
-        res.append(el)
+def extract_outer_data(outer_stat):
+    halves = outer_stat.split(':')
+    res = [int(i) for i in re.findall('\d+', halves[0])]
+    find_contest = halves[0].split('|')[0].split('[')[1].rstrip(' ')
+    print(find_contest)
+    print(res)
+    res.append(find_contest)
+    return res + extract_doubles(halves[1])
 
-    tail = partial[2]
-    num_tries = tail.split('(')[1]
-    res.append(float(re.findall('\d+', num_tries)[0]))
-
-    return res
-
-def extract_outer(outer_stat):
-    partial = outer_stat.split(',')
-    res = [extract_doubles(partial[0])[0]]
-    res.append(re.findall('\d+'))
-    for el in extract_doubles(partial[2]):
-        res.append(el)
-
-    tail = partial[2]
-    num_tries = tail.split('(')[1]
-    res.append(float(re.findall('\d+', num_tries)[0]))
 
 def prepare_stats(lines):
     range_lines = len(lines)
@@ -82,7 +67,11 @@ def prepare_stats(lines):
             outer_stats = lines[index + 2]
             #extracted_inner = extract_inner_timer(inner_stats)
             extracted_inner = extract_doubles(inner_stats)
+            extracted_inner[-1] = int(extracted_inner[-1])
             print(extracted_inner)
+            extracted_outer = extract_outer_data(outer_stats)
+            extracted_outer[-1] = int(extracted_outer[-1])
+            print(extracted_outer)
             index += 3
             break
 
