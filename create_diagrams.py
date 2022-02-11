@@ -1,4 +1,5 @@
 import argparse
+import re
 
 """When the program terminates, the timer will send a report
 of the following form to std:cerr
@@ -39,13 +40,51 @@ def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
+def extract_doubles(line):
+    return [float(i) for i in re.findall('\d+\.\d+', line)]
+
+def extract_inner_timer(inner_stat):
+    partial = inner_stat.split(',')
+    print(inner_stat, partial)
+    res = [extract_doubles(partial[0])[0]]
+    res.append(extract_doubles(partial[1])[0])
+    for el in extract_doubles(partial[2]):
+        res.append(el)
+
+    tail = partial[2]
+    num_tries = tail.split('(')[1]
+    res.append(float(re.findall('\d+', num_tries)[0]))
+
+    return res
+
+
+def prepare_stats(lines):
+    range_lines = len(lines)
+    index = 0
+
+    while index < range_lines:
+        current_team = lines[index]
+        print(current_team)
+
+        if current_team != "TeamNewProcesses" and current_team != "TeamConstProcesses":
+            inner_stats = lines[index + 1]
+            outer_stats = lines[index + 2]
+            extracted_inner = extract_inner_timer(inner_stats)
+            print(extracted_inner)
+            index += 3
+            break
+
+        else:
+            index +=2
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     path, name = command_line_args()
     lines = open_file_return_list_of_lines(path)
-    print_lines(lines)
-    print(lines)
+  #  print_lines(lines)
+ #   print(lines)
+    prepare_stats(lines)
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
