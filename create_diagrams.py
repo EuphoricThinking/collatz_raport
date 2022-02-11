@@ -234,6 +234,14 @@ def plot_contest_for_team(contest, team, stats, where):
 
     plt.show()
 
+def convert_to_ms(val, unit):
+    if unit == 's':
+        return val*1000.0
+    if unit == 'us':
+        return val/1000.0
+    else:
+        return val
+
 def compare_mean_contests(stats, contest_name):
     contest_res_per_team = {}
 
@@ -259,12 +267,12 @@ def compare_mean_contests(stats, contest_name):
             to_mean = []
             for record in cur_team:
                 if record[1] == seed:
-                    print('hete', record[2])
-                    to_mean.append(record[2]['total'][0])
+                    print('hete', record)
+                    to_mean.append(convert_to_ms(record[2]['total'][0], record[-1]))
             print(to_mean)
             if team not in meansTeams.keys():
                 meansTeams[team] = []
-            meansTeams[team].append([seed, statistics.mean(to_mean)])
+            meansTeams[team].append([seed, round(statistics.mean(to_mean), 4)])
 
     for key, val in meansTeams.items():
         print(key, val)
