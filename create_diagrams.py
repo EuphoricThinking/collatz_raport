@@ -50,6 +50,14 @@ def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
+def convert_to_ms(val, unit):
+    if unit == 's':
+        return val*1000.0
+    if unit == 'us':
+        return val/1000.0
+    else:
+        return val
+
 def extract_doubles(line):
     #return [float(i) for i in re.findall('\d+\.\d+', line)]
     return [float(i) for i in re.findall('\d+\.*\d*', line)]
@@ -191,7 +199,8 @@ def solo_stats(team_contest):
         print(workers)
         cur_work = res[num_workers]
         work_stats = workers[2]
-        solo_work = work_stats['solo']
+        solo_work1 = work_stats['solo']
+        solo_work = [convert_to_ms(i, solo_work1[-1]) for i in solo_work1[:-1]]
         # x_axis.append(str(workers[1]) + '\n[' + str(solo_work[-1]) + ']')
         # minT.append(solo_work[2])
         # maxT.append(solo_work[3])
@@ -218,7 +227,7 @@ def plot_contest_for_team(contest, team, stats, where):
     x_axis, stddev, minT, maxT, avr = for_num_workers[1]
     plt.figure()
     plt.xlabel('Rozmiar ziarna\n[Liczba danych]')
-    plt.ylabel('Czas [us]')
+    plt.ylabel('Czas [ms]')
     plt.title(contest + ' dla ' + team + ' na ' + where)
 
     colours = ['r', 'b', 'c', 'g', 'y', 'k']
@@ -238,13 +247,6 @@ def plot_contest_for_team(contest, team, stats, where):
 
     plt.show()
 
-def convert_to_ms(val, unit):
-    if unit == 's':
-        return val*1000.0
-    if unit == 'us':
-        return val/1000.0
-    else:
-        return val
 
 def compare_mean_contests(stats, contest_name, where):
     contest_res_per_team = {}
@@ -327,8 +329,8 @@ if __name__ == '__main__':
     s3_stats = prepare_stats(s3_res)
 
    # create_total_diagram(m1_stats, m2_stats, m3_stats, s1_stats, s2_stats, s3_stats)
-    #plot_contest_for_team('LongNumber', 'TeamPool', s1_stats, 'studentsie')
-    compare_mean_contests(m1_stats, "LongNumber", "laptopie")
+    plot_contest_for_team('LongNumber', 'TeamConstThreads', m1_stats, 'laptopie')
+    #compare_mean_contests(m1_stats, "LongNumber", "laptopie")
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
