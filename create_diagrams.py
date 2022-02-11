@@ -210,7 +210,20 @@ def plot_contest_for_team(contest, team, stats):
     plt.xlabel('Rozmiar ziarna\n[Liczba danych]')
     plt.ylabel('Czas [us]')
     plt.title(contest + ' dla ' + team + ' na laptopie')
-    plt.plot(x_axis, minT, 'ro', label='Pierwsza próba')
+
+    colours = ['r', 'b', 'c', 'g', 'y', 'k']
+    for ind, num_worker in enumerate(for_num_workers.keys()):
+        print(ind)
+        x_axis, stddev, minT, maxT, avr = for_num_workers[num_worker]
+
+        plt.plot(x_axis, minT, colours[ind] + 'o')
+        plt.plot(x_axis, maxT, colours[ind] + '^')
+        plt.plot(x_axis, avr, colours[ind])
+
+    # plt.plot(x_axis, minT, 'ro')
+    # plt.plot(x_axis, maxT, 'r^')
+    # plt.plot(x_axis, avr, 'r')
+
     plt.show()
 
 
