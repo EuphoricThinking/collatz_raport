@@ -147,6 +147,13 @@ def create_total_diagram(m1, m2, m3, s1, s2, s3):
     plt.plot(names, s_val, 'bo', label='students')
     plt.title('Całkowity czas obliczeń na dwóch środowiskach')
     plt.ylabel('Czas [min]')
+    plt.yticks(np.arange(min(min(m_val), min(s_val)) - 0.5, max(max(m_val), max(s_val)) + 1.0, 0.25))
+    ax = plt.gca()
+    temp = ax.yaxis.get_ticklabels()
+    temp = list(set(temp) - set(temp[::4]))
+    for label in temp:
+        label.set_visible(False)
+    plt.legend(loc='center right')
     plt.show()
 
 if __name__ == '__main__':
