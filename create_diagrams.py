@@ -88,6 +88,10 @@ def prepare_stats(lines):
             extracted_outer = extract_outer_data(outer_stats)
             extracted_outer[-1] = int(extracted_outer[-1])
 
+            unitNum1 = inner_stats.split(',')[1].split()[2]
+            unit1 = re.findall('[a-z]+', unitNum1)
+            extracted_inner.append(unit1[0])
+
             stats = {}
             stats['solo'] = extracted_inner
             stats['total'] = extracted_outer[3:]
