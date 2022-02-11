@@ -1,0 +1,1045 @@
+
+TeamSolo
+Timer(CalcCollatzSoloTimer): <t> = 21.6695us, std = 2.86865us, 18.489us <= t <= 44.785us (n=2998)
+Timer(TeamSolo<1>[SameNumber | 2]): <t> = 70.7704ms, std = 0ms, 70.7704ms <= t <= 70.7704ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 37.0358us, std = 26.6143us, 20.016us <= t <= 402.936us (n=2998)
+Timer(TeamNewThreads<1>[SameNumber | 2]): <t> = 247.888ms, std = 0ms, 247.888ms <= t <= 247.888ms (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 23.605us, std = 5.27198us, 19.438us <= t <= 105.283us (n=2998)
+Timer(TeamConstThreads<1>[SameNumber | 2]): <t> = 78.2439ms, std = 0ms, 78.2439ms <= t <= 78.2439ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 24.4597us, std = 9.56291us, 19.46us <= t <= 93.689us (n=2998)
+Timer(TeamPool<1>[SameNumber | 2]): <t> = 122.224ms, std = 0ms, 122.224ms <= t <= 122.224ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<1>[SameNumber | 2]): <t> = 6.81788s, std = 0s, 6.81788s <= t <= 6.81788s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<1>[SameNumber | 2]): <t> = 80.5486ms, std = 0ms, 80.5486ms <= t <= 80.5486ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 32.7063us, std = 17.6049us, 21.118us <= t <= 314.566us (n=2998)
+Timer(TeamNewThreads<2>[SameNumber | 2]): <t> = 141.048ms, std = 0ms, 141.048ms <= t <= 141.048ms (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 21.8846us, std = 10.8603us, 19.253us <= t <= 436.37us (n=2998)
+Timer(TeamConstThreads<2>[SameNumber | 2]): <t> = 39.1144ms, std = 0ms, 39.1144ms <= t <= 39.1144ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 26.6191us, std = 13.3229us, 21.048us <= t <= 97.751us (n=2998)
+Timer(TeamPool<2>[SameNumber | 2]): <t> = 65.0866ms, std = 0ms, 65.0866ms <= t <= 65.0866ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<2>[SameNumber | 2]): <t> = 6.93546s, std = 0s, 6.93546s <= t <= 6.93546s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<2>[SameNumber | 2]): <t> = 51.3828ms, std = 0ms, 51.3828ms <= t <= 51.3828ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 34.7974us, std = 19.701us, 20.944us <= t <= 363.801us (n=2998)
+Timer(TeamNewThreads<3>[SameNumber | 2]): <t> = 162.278ms, std = 0ms, 162.278ms <= t <= 162.278ms (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 26.6585us, std = 17.3457us, 20.228us <= t <= 451.194us (n=2998)
+Timer(TeamConstThreads<3>[SameNumber | 2]): <t> = 39.7315ms, std = 0ms, 39.7315ms <= t <= 39.7315ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 29.9684us, std = 16.3828us, 20.401us <= t <= 160.947us (n=2998)
+Timer(TeamPool<3>[SameNumber | 2]): <t> = 61.5676ms, std = 0ms, 61.5676ms <= t <= 61.5676ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<3>[SameNumber | 2]): <t> = 7.33223s, std = 0s, 7.33223s <= t <= 7.33223s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<3>[SameNumber | 2]): <t> = 39.4144ms, std = 0ms, 39.4144ms <= t <= 39.4144ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 35.0356us, std = 21.8287us, 21.245us <= t <= 277.929us (n=2998)
+Timer(TeamNewThreads<4>[SameNumber | 2]): <t> = 117.913ms, std = 0ms, 117.913ms <= t <= 117.913ms (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 23.4123us, std = 8.76889us, 20.425us <= t <= 241.721us (n=2998)
+Timer(TeamConstThreads<4>[SameNumber | 2]): <t> = 26.563ms, std = 0ms, 26.563ms <= t <= 26.563ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 32.3329us, std = 16.2533us, 20.812us <= t <= 104.85us (n=2998)
+Timer(TeamPool<4>[SameNumber | 2]): <t> = 45.0067ms, std = 0ms, 45.0067ms <= t <= 45.0067ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<4>[SameNumber | 2]): <t> = 7.1089s, std = 0s, 7.1089s <= t <= 7.1089s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<4>[SameNumber | 2]): <t> = 37.3876ms, std = 0ms, 37.3876ms <= t <= 37.3876ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 41.5461us, std = 25.8607us, 0.021612ms <= t <= 0.482445ms (n=2998)
+Timer(TeamNewThreads<7>[SameNumber | 2]): <t> = 119.233ms, std = 0ms, 119.233ms <= t <= 119.233ms (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 40.053us, std = 18.5562us, 20.866us <= t <= 123.008us (n=2998)
+Timer(TeamConstThreads<7>[SameNumber | 2]): <t> = 26.3348ms, std = 0ms, 26.3348ms <= t <= 26.3348ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 31.8342us, std = 16.5674us, 20.909us <= t <= 109.885us (n=2998)
+Timer(TeamPool<7>[SameNumber | 2]): <t> = 41.6366ms, std = 0ms, 41.6366ms <= t <= 41.6366ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<7>[SameNumber | 2]): <t> = 7.69783s, std = 0s, 7.69783s <= t <= 7.69783s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<7>[SameNumber | 2]): <t> = 31.5393ms, std = 0ms, 31.5393ms <= t <= 31.5393ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 37.3052us, std = 23.32us, 20.56us <= t <= 418.159us (n=2998)
+Timer(TeamNewThreads<10>[SameNumber | 2]): <t> = 105.094ms, std = 0ms, 105.094ms <= t <= 105.094ms (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 42.1806us, std = 18.0798us, 21.08us <= t <= 114.809us (n=2998)
+Timer(TeamConstThreads<10>[SameNumber | 2]): <t> = 22.6432ms, std = 0ms, 22.6432ms <= t <= 22.6432ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 37.9581us, std = 19.7653us, 21.032us <= t <= 142.349us (n=2998)
+Timer(TeamPool<10>[SameNumber | 2]): <t> = 44.3073ms, std = 0ms, 44.3073ms <= t <= 44.3073ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<10>[SameNumber | 2]): <t> = 7.76676s, std = 0s, 7.76676s <= t <= 7.76676s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<10>[SameNumber | 2]): <t> = 32.5727ms, std = 0ms, 32.5727ms <= t <= 32.5727ms (n=1)
+
+TeamAsync
+Timer(CalcCollatzSoloTimer): <t> = 41.0182us, std = 23.5386us, 20.549us <= t <= 471.932us (n=2998)
+Timer(TeamAsync<1>[SameNumber | 2]): <t> = 155.104ms, std = 0ms, 155.104ms <= t <= 155.104ms (n=1)
+
+TeamSolo
+Timer(CalcCollatzSoloTimer): <t> = 99.8352us, std = 9.50968us, 84.689us <= t <= 191.164us (n=5995)
+Timer(TeamSolo<1>[SameNumber | 5]): <t> = 0.604636s, std = 0s, 0.604636s <= t <= 0.604636s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.268174ms, std = 0.0969034ms, 0.086282ms <= t <= 0.948516ms (n=5995)
+Timer(TeamNewThreads<1>[SameNumber | 5]): <t> = 2.41999s, std = 0s, 2.41999s <= t <= 2.41999s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 98.1805us, std = 20.2701us, 85.565us <= t <= 399.439us (n=5995)
+Timer(TeamConstThreads<1>[SameNumber | 5]): <t> = 0.61229s, std = 0s, 0.61229s <= t <= 0.61229s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 96.3327us, std = 16.0472us, 85.301us <= t <= 348.731us (n=5995)
+Timer(TeamPool<1>[SameNumber | 5]): <t> = 0.670188s, std = 0s, 0.670188s <= t <= 0.670188s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<1>[SameNumber | 5]): <t> = 27.3952s, std = 0s, 27.3952s <= t <= 27.3952s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<1>[SameNumber | 5]): <t> = 0.613231s, std = 0s, 0.613231s <= t <= 0.613231s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.278564ms, std = 0.0860092ms, 0.092504ms <= t <= 0.967356ms (n=5995)
+Timer(TeamNewThreads<2>[SameNumber | 5]): <t> = 1.46531s, std = 0s, 1.46531s <= t <= 1.46531s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 117.839us, std = 39.3265us, 0.090686ms <= t <= 0.499105ms (n=5995)
+Timer(TeamConstThreads<2>[SameNumber | 5]): <t> = 0.377113s, std = 0s, 0.377113s <= t <= 0.377113s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 102.045us, std = 17.4469us, 89.524us <= t <= 364.12us (n=5995)
+Timer(TeamPool<2>[SameNumber | 5]): <t> = 0.377723s, std = 0s, 0.377723s <= t <= 0.377723s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<2>[SameNumber | 5]): <t> = 27.8346s, std = 0s, 27.8346s <= t <= 27.8346s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<2>[SameNumber | 5]): <t> = 0.3139s, std = 0s, 0.3139s <= t <= 0.3139s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.263133ms, std = 0.0945174ms, 0.091505ms <= t <= 0.974106ms (n=5995)
+Timer(TeamNewThreads<3>[SameNumber | 5]): <t> = 1.01409s, std = 0s, 1.01409s <= t <= 1.01409s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 101.683us, std = 27.1247us, 0.086112ms <= t <= 0.416992ms (n=5995)
+Timer(TeamConstThreads<3>[SameNumber | 5]): <t> = 222.917ms, std = 0ms, 222.917ms <= t <= 222.917ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 99.655us, std = 26.6369us, 85.504us <= t <= 368.616us (n=5995)
+Timer(TeamPool<3>[SameNumber | 5]): <t> = 245.786ms, std = 0ms, 245.786ms <= t <= 245.786ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<3>[SameNumber | 5]): <t> = 26.8634s, std = 0s, 26.8634s <= t <= 26.8634s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<3>[SameNumber | 5]): <t> = 0.27114s, std = 0s, 0.27114s <= t <= 0.27114s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 244.49us, std = 92.4576us, 0.093521ms <= t <= 0.515792ms (n=5995)
+Timer(TeamNewThreads<4>[SameNumber | 5]): <t> = 0.7457s, std = 0s, 0.7457s <= t <= 0.7457s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 111.773us, std = 35.6322us, 90.461us <= t <= 391.037us (n=5995)
+Timer(TeamConstThreads<4>[SameNumber | 5]): <t> = 191.789ms, std = 0ms, 191.789ms <= t <= 191.789ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 105.782us, std = 37.2476us, 0.085958ms <= t <= 0.8731ms (n=5995)
+Timer(TeamPool<4>[SameNumber | 5]): <t> = 199.023ms, std = 0ms, 199.023ms <= t <= 199.023ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<4>[SameNumber | 5]): <t> = 28.2888s, std = 0s, 28.2888s <= t <= 28.2888s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<4>[SameNumber | 5]): <t> = 188.129ms, std = 0ms, 188.129ms <= t <= 188.129ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 240.136us, std = 87.1371us, 0.093416ms <= t <= 1.55728ms (n=5995)
+Timer(TeamNewThreads<7>[SameNumber | 5]): <t> = 0.525969s, std = 0s, 0.525969s <= t <= 0.525969s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 122.36us, std = 53.1594us, 0.086007ms <= t <= 0.517996ms (n=5995)
+Timer(TeamConstThreads<7>[SameNumber | 5]): <t> = 134.568ms, std = 0ms, 134.568ms <= t <= 134.568ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 106.366us, std = 45.8008us, 0.090706ms <= t <= 1.51911ms (n=5995)
+Timer(TeamPool<7>[SameNumber | 5]): <t> = 124.591ms, std = 0ms, 124.591ms <= t <= 124.591ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<7>[SameNumber | 5]): <t> = 27.2346s, std = 0s, 27.2346s <= t <= 27.2346s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<7>[SameNumber | 5]): <t> = 114.926ms, std = 0ms, 114.926ms <= t <= 114.926ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 235.478us, std = 87.2966us, 0.093229ms <= t <= 0.6811ms (n=5995)
+Timer(TeamNewThreads<10>[SameNumber | 5]): <t> = 0.405922s, std = 0s, 0.405922s <= t <= 0.405922s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 124.026us, std = 52.9739us, 0.086108ms <= t <= 0.527667ms (n=5995)
+Timer(TeamConstThreads<10>[SameNumber | 5]): <t> = 107.372ms, std = 0ms, 107.372ms <= t <= 107.372ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 118.27us, std = 53.6619us, 0.092407ms <= t <= 0.561218ms (n=5995)
+Timer(TeamPool<10>[SameNumber | 5]): <t> = 103.813ms, std = 0ms, 103.813ms <= t <= 103.813ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<10>[SameNumber | 5]): <t> = 28.3434s, std = 0s, 28.3434s <= t <= 28.3434s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<10>[SameNumber | 5]): <t> = 104.874ms, std = 0ms, 104.874ms <= t <= 104.874ms (n=1)
+
+TeamAsync
+Timer(CalcCollatzSoloTimer): <t> = 167.155us, std = 83.7104us, 0.093153ms <= t <= 0.664155ms (n=5995)
+Timer(TeamAsync<1>[SameNumber | 5]): <t> = 0.30032s, std = 0s, 0.30032s <= t <= 0.30032s (n=1)
+
+TeamSolo
+Timer(CalcCollatzSoloTimer): <t> = 0.2709ms, std = 0.0143827ms, 0.241841ms <= t <= 0.658905ms (n=23977)
+Timer(TeamSolo<1>[SameNumber | 23]): <t> = 6.51687s, std = 0s, 6.51687s <= t <= 6.51687s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.575352ms, std = 0.300528ms, 0.244515ms <= t <= 5.71534ms (n=23977)
+Timer(TeamNewThreads<1>[SameNumber | 23]): <t> = 17.3588s, std = 0s, 17.3588s <= t <= 17.3588s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.273022ms, std = 0.0212295ms, 0.245671ms <= t <= 1.28186ms (n=23977)
+Timer(TeamConstThreads<1>[SameNumber | 23]): <t> = 6.60635s, std = 0s, 6.60635s <= t <= 6.60635s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 0.274561ms, std = 0.0241024ms, 0.243139ms <= t <= 0.982828ms (n=23977)
+Timer(TeamPool<1>[SameNumber | 23]): <t> = 6.95077s, std = 0s, 6.95077s <= t <= 6.95077s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<1>[SameNumber | 23]): <t> = 131.155s, std = 0s, 131.155s <= t <= 131.155s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<1>[SameNumber | 23]): <t> = 6.52616s, std = 0s, 6.52616s <= t <= 6.52616s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.679501ms, std = 0.276596ms, 0.246167ms <= t <= 2.27108ms (n=23977)
+Timer(TeamNewThreads<2>[SameNumber | 23]): <t> = 11.9852s, std = 0s, 11.9852s <= t <= 11.9852s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.282829ms, std = 0.0495073ms, 0.245761ms <= t <= 2.02535ms (n=23977)
+Timer(TeamConstThreads<2>[SameNumber | 23]): <t> = 3.48272s, std = 0s, 3.48272s <= t <= 3.48272s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 0.276906ms, std = 0.0338648ms, 0.243587ms <= t <= 1.05ms (n=23977)
+Timer(TeamPool<2>[SameNumber | 23]): <t> = 3.54868s, std = 0s, 3.54868s <= t <= 3.54868s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<2>[SameNumber | 23]): <t> = 132.047s, std = 0s, 132.047s <= t <= 132.047s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<2>[SameNumber | 23]): <t> = 3.39202s, std = 0s, 3.39202s <= t <= 3.39202s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.745768ms, std = 0.252787ms, 0.26032ms <= t <= 7.76509ms (n=23977)
+Timer(TeamNewThreads<3>[SameNumber | 23]): <t> = 9.47925s, std = 0s, 9.47925s <= t <= 9.47925s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.282295ms, std = 0.032649ms, 0.245463ms <= t <= 1.04411ms (n=23977)
+Timer(TeamConstThreads<3>[SameNumber | 23]): <t> = 2.31758s, std = 0s, 2.31758s <= t <= 2.31758s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 0.277256ms, std = 0.0293714ms, 0.243783ms <= t <= 0.978979ms (n=23977)
+Timer(TeamPool<3>[SameNumber | 23]): <t> = 2.38836s, std = 0s, 2.38836s <= t <= 2.38836s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<3>[SameNumber | 23]): <t> = 133.918s, std = 0s, 133.918s <= t <= 133.918s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<3>[SameNumber | 23]): <t> = 2.31669s, std = 0s, 2.31669s <= t <= 2.31669s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.718356ms, std = 0.251588ms, 0.259427ms <= t <= 5.70891ms (n=23977)
+Timer(TeamNewThreads<4>[SameNumber | 23]): <t> = 7.54198s, std = 0s, 7.54198s <= t <= 7.54198s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.285992ms, std = 0.0417174ms, 0.246399ms <= t <= 2.08407ms (n=23977)
+Timer(TeamConstThreads<4>[SameNumber | 23]): <t> = 1.789s, std = 0s, 1.789s <= t <= 1.789s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 0.291516ms, std = 0.0471496ms, 0.244159ms <= t <= 1.4192ms (n=23977)
+Timer(TeamPool<4>[SameNumber | 23]): <t> = 1.89282s, std = 0s, 1.89282s <= t <= 1.89282s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<4>[SameNumber | 23]): <t> = 137.238s, std = 0s, 137.238s <= t <= 137.238s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<4>[SameNumber | 23]): <t> = 1.71817s, std = 0s, 1.71817s <= t <= 1.71817s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.68246ms, std = 0.235234ms, 0.266592ms <= t <= 3.39659ms (n=23977)
+Timer(TeamNewThreads<7>[SameNumber | 23]): <t> = 4.56207s, std = 0s, 4.56207s <= t <= 4.56207s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.282064ms, std = 0.0414505ms, 0.260859ms <= t <= 1.03126ms (n=23977)
+Timer(TeamConstThreads<7>[SameNumber | 23]): <t> = 1.04794s, std = 0s, 1.04794s <= t <= 1.04794s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 0.287824ms, std = 0.0563585ms, 0.244814ms <= t <= 1.38808ms (n=23977)
+Timer(TeamPool<7>[SameNumber | 23]): <t> = 1.08769s, std = 0s, 1.08769s <= t <= 1.08769s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<7>[SameNumber | 23]): <t> = 140.004s, std = 0s, 140.004s <= t <= 140.004s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<7>[SameNumber | 23]): <t> = 1.16854s, std = 0s, 1.16854s <= t <= 1.16854s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.648526ms, std = 0.237163ms, 0.265965ms <= t <= 6.89046ms (n=23977)
+Timer(TeamNewThreads<10>[SameNumber | 23]): <t> = 3.32571s, std = 0s, 3.32571s <= t <= 3.32571s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.29378ms, std = 0.0624211ms, 0.247726ms <= t <= 1.40235ms (n=23977)
+Timer(TeamConstThreads<10>[SameNumber | 23]): <t> = 0.781388s, std = 0s, 0.781388s <= t <= 0.781388s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 0.288348ms, std = 0.0536596ms, 0.260013ms <= t <= 1.28873ms (n=23977)
+Timer(TeamPool<10>[SameNumber | 23]): <t> = 0.776917s, std = 0s, 0.776917s <= t <= 0.776917s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<10>[SameNumber | 23]): <t> = 143.898s, std = 0s, 143.898s <= t <= 143.898s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<10>[SameNumber | 23]): <t> = 0.750593s, std = 0s, 0.750593s <= t <= 0.750593s (n=1)
+
+TeamAsync
+Timer(CalcCollatzSoloTimer): <t> = 0.44115ms, std = 0.211811ms, 0.245227ms <= t <= 4.13523ms (n=23977)
+Timer(TeamAsync<1>[SameNumber | 23]): <t> = 1.19405s, std = 0s, 1.19405s <= t <= 1.19405s (n=1)
+
+TeamSolo
+Timer(CalcCollatzSoloTimer): <t> = 0.808334ms, std = 0.64398ms, 0.040806ms <= t <= 2.16652ms (n=298)
+Timer(TeamSolo<1>[ShortNumber | 2]): <t> = 241.222ms, std = 0ms, 241.222ms <= t <= 241.222ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 1.80463ms, std = 1.76285ms, 0.143794ms <= t <= 7.1189ms (n=298)
+Timer(TeamNewThreads<1>[ShortNumber | 2]): <t> = 0.599572s, std = 0s, 0.599572s <= t <= 0.599572s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.825697ms, std = 0.651118ms, 0.057262ms <= t <= 2.1617ms (n=298)
+Timer(TeamConstThreads<1>[ShortNumber | 2]): <t> = 248.468ms, std = 0ms, 248.468ms <= t <= 248.468ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 0.850848ms, std = 0.645955ms, 0.109341ms <= t <= 3.42865ms (n=298)
+Timer(TeamPool<1>[ShortNumber | 2]): <t> = 0.259161s, std = 0s, 0.259161s <= t <= 0.259161s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<1>[ShortNumber | 2]): <t> = 2.30422s, std = 0s, 2.30422s <= t <= 2.30422s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<1>[ShortNumber | 2]): <t> = 249.551ms, std = 0ms, 249.551ms <= t <= 249.551ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 2.09159ms, std = 1.82648ms, 0.107176ms <= t <= 7.18045ms (n=298)
+Timer(TeamNewThreads<2>[ShortNumber | 2]): <t> = 0.477741s, std = 0s, 0.477741s <= t <= 0.477741s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.876516ms, std = 0.733059ms, 0.04289ms <= t <= 4.73364ms (n=298)
+Timer(TeamConstThreads<2>[ShortNumber | 2]): <t> = 150.08ms, std = 0ms, 150.08ms <= t <= 150.08ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 0.9234ms, std = 0.689934ms, 0.118632ms <= t <= 3.89992ms (n=298)
+Timer(TeamPool<2>[ShortNumber | 2]): <t> = 142.097ms, std = 0ms, 142.097ms <= t <= 142.097ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<2>[ShortNumber | 2]): <t> = 2.61316s, std = 0s, 2.61316s <= t <= 2.61316s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<2>[ShortNumber | 2]): <t> = 172.655ms, std = 0ms, 172.655ms <= t <= 172.655ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 2.25753ms, std = 1.92738ms, 0.161051ms <= t <= 7.40841ms (n=298)
+Timer(TeamNewThreads<3>[ShortNumber | 2]): <t> = 0.420293s, std = 0s, 0.420293s <= t <= 0.420293s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.985616ms, std = 0.84305ms, 0.066567ms <= t <= 5.67744ms (n=298)
+Timer(TeamConstThreads<3>[ShortNumber | 2]): <t> = 117.052ms, std = 0ms, 117.052ms <= t <= 117.052ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 0.982603ms, std = 0.76593ms, 0.150282ms <= t <= 5.72019ms (n=298)
+Timer(TeamPool<3>[ShortNumber | 2]): <t> = 102.106ms, std = 0ms, 102.106ms <= t <= 102.106ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<3>[ShortNumber | 2]): <t> = 2.14056s, std = 0s, 2.14056s <= t <= 2.14056s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<3>[ShortNumber | 2]): <t> = 119.625ms, std = 0ms, 119.625ms <= t <= 119.625ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 2.36879ms, std = 2.09332ms, 0.072902ms <= t <= 9.96244ms (n=298)
+Timer(TeamNewThreads<4>[ShortNumber | 2]): <t> = 0.35957s, std = 0s, 0.35957s <= t <= 0.35957s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 1.00597ms, std = 0.887724ms, 0.10298ms <= t <= 7.4635ms (n=298)
+Timer(TeamConstThreads<4>[ShortNumber | 2]): <t> = 93.6693ms, std = 0ms, 93.6693ms <= t <= 93.6693ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 0.993582ms, std = 0.796512ms, 0.063908ms <= t <= 6.37633ms (n=298)
+Timer(TeamPool<4>[ShortNumber | 2]): <t> = 77.3843ms, std = 0ms, 77.3843ms <= t <= 77.3843ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<4>[ShortNumber | 2]): <t> = 2.44283s, std = 0s, 2.44283s <= t <= 2.44283s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<4>[ShortNumber | 2]): <t> = 99.7633ms, std = 0ms, 99.7633ms <= t <= 99.7633ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 2.54994ms, std = 2.14903ms, 0.050474ms <= t <= 7.71902ms (n=298)
+Timer(TeamNewThreads<7>[ShortNumber | 2]): <t> = 0.262163s, std = 0s, 0.262163s <= t <= 0.262163s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 1.08772ms, std = 0.962679ms, 0.124907ms <= t <= 6.71043ms (n=298)
+Timer(TeamConstThreads<7>[ShortNumber | 2]): <t> = 61.2352ms, std = 0ms, 61.2352ms <= t <= 61.2352ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 1.06578ms, std = 0.868139ms, 0.153227ms <= t <= 6.63976ms (n=298)
+Timer(TeamPool<7>[ShortNumber | 2]): <t> = 48.6906ms, std = 0ms, 48.6906ms <= t <= 48.6906ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<7>[ShortNumber | 2]): <t> = 2.52455s, std = 0s, 2.52455s <= t <= 2.52455s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<7>[ShortNumber | 2]): <t> = 77.5671ms, std = 0ms, 77.5671ms <= t <= 77.5671ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 2.61252ms, std = 2.15987ms, 0.065628ms <= t <= 9.43078ms (n=298)
+Timer(TeamNewThreads<10>[ShortNumber | 2]): <t> = 206.252ms, std = 0ms, 206.252ms <= t <= 206.252ms (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 1.19924ms, std = 1.15726ms, 0.090734ms <= t <= 6.23821ms (n=298)
+Timer(TeamConstThreads<10>[ShortNumber | 2]): <t> = 48.1823ms, std = 0ms, 48.1823ms <= t <= 48.1823ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 1.13382ms, std = 0.981296ms, 0.096432ms <= t <= 6.48064ms (n=298)
+Timer(TeamPool<10>[ShortNumber | 2]): <t> = 36.2045ms, std = 0ms, 36.2045ms <= t <= 36.2045ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<10>[ShortNumber | 2]): <t> = 2.33824s, std = 0s, 2.33824s <= t <= 2.33824s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<10>[ShortNumber | 2]): <t> = 71.2346ms, std = 0ms, 71.2346ms <= t <= 71.2346ms (n=1)
+
+TeamAsync
+Timer(CalcCollatzSoloTimer): <t> = 2.08543ms, std = 2.00492ms, 0.086757ms <= t <= 9.49082ms (n=298)
+Timer(TeamAsync<1>[ShortNumber | 2]): <t> = 27.3015ms, std = 0ms, 27.3015ms <= t <= 27.3015ms (n=1)
+
+TeamSolo
+Timer(CalcCollatzSoloTimer): <t> = 0.971122ms, std = 0.679358ms, 0.061569ms <= t <= 2.60429ms (n=595)
+Timer(TeamSolo<1>[ShortNumber | 5]): <t> = 0.578619s, std = 0s, 0.578619s <= t <= 0.578619s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 1.90397ms, std = 1.81356ms, 0.104674ms <= t <= 10.8232ms (n=595)
+Timer(TeamNewThreads<1>[ShortNumber | 5]): <t> = 1.23348s, std = 0s, 1.23348s <= t <= 1.23348s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.996768ms, std = 0.685338ms, 0.114494ms <= t <= 2.51711ms (n=595)
+Timer(TeamConstThreads<1>[ShortNumber | 5]): <t> = 0.597845s, std = 0s, 0.597845s <= t <= 0.597845s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 0.964954ms, std = 0.663925ms, 0.102615ms <= t <= 3.73339ms (n=595)
+Timer(TeamPool<1>[ShortNumber | 5]): <t> = 0.583611s, std = 0s, 0.583611s <= t <= 0.583611s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<1>[ShortNumber | 5]): <t> = 4.93236s, std = 0s, 4.93236s <= t <= 4.93236s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<1>[ShortNumber | 5]): <t> = 0.572804s, std = 0s, 0.572804s <= t <= 0.572804s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 2.42456ms, std = 1.94296ms, 0.199614ms <= t <= 9.24061ms (n=595)
+Timer(TeamNewThreads<2>[ShortNumber | 5]): <t> = 1.06852s, std = 0s, 1.06852s <= t <= 1.06852s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.99518ms, std = 0.703605ms, 0.0628ms <= t <= 4.0592ms (n=595)
+Timer(TeamConstThreads<2>[ShortNumber | 5]): <t> = 0.342958s, std = 0s, 0.342958s <= t <= 0.342958s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 1.00406ms, std = 0.683399ms, 0.13789ms <= t <= 3.73699ms (n=595)
+Timer(TeamPool<2>[ShortNumber | 5]): <t> = 0.305163s, std = 0s, 0.305163s <= t <= 0.305163s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<2>[ShortNumber | 5]): <t> = 4.21817s, std = 0s, 4.21817s <= t <= 4.21817s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<2>[ShortNumber | 5]): <t> = 0.333434s, std = 0s, 0.333434s <= t <= 0.333434s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 2.76421ms, std = 2.05994ms, 0.232119ms <= t <= 8.17987ms (n=595)
+Timer(TeamNewThreads<3>[ShortNumber | 5]): <t> = 0.968197s, std = 0s, 0.968197s <= t <= 0.968197s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 0.998194ms, std = 0.680215ms, 0.120404ms <= t <= 4.07227ms (n=595)
+Timer(TeamConstThreads<3>[ShortNumber | 5]): <t> = 226.834ms, std = 0ms, 226.834ms <= t <= 226.834ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 1.00856ms, std = 0.731517ms, 0.14681ms <= t <= 6.07747ms (n=595)
+Timer(TeamPool<3>[ShortNumber | 5]): <t> = 205.034ms, std = 0ms, 205.034ms <= t <= 205.034ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<3>[ShortNumber | 5]): <t> = 4.57866s, std = 0s, 4.57866s <= t <= 4.57866s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<3>[ShortNumber | 5]): <t> = 230.74ms, std = 0ms, 230.74ms <= t <= 230.74ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 2.79332ms, std = 2.10181ms, 0.075968ms <= t <= 9.36322ms (n=595)
+Timer(TeamNewThreads<4>[ShortNumber | 5]): <t> = 0.747818s, std = 0s, 0.747818s <= t <= 0.747818s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 1.09736ms, std = 0.780607ms, 0.124466ms <= t <= 6.81087ms (n=595)
+Timer(TeamConstThreads<4>[ShortNumber | 5]): <t> = 191.145ms, std = 0ms, 191.145ms <= t <= 191.145ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 1.06149ms, std = 0.731871ms, 0.070712ms <= t <= 5.39852ms (n=595)
+Timer(TeamPool<4>[ShortNumber | 5]): <t> = 162.64ms, std = 0ms, 162.64ms <= t <= 162.64ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<4>[ShortNumber | 5]): <t> = 4.44255s, std = 0s, 4.44255s <= t <= 4.44255s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<4>[ShortNumber | 5]): <t> = 189.081ms, std = 0ms, 189.081ms <= t <= 189.081ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 2.78789ms, std = 2.10951ms, 0.096855ms <= t <= 8.33249ms (n=595)
+Timer(TeamNewThreads<7>[ShortNumber | 5]): <t> = 0.532583s, std = 0s, 0.532583s <= t <= 0.532583s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 1.09685ms, std = 0.882397ms, 0.124247ms <= t <= 7.17987ms (n=595)
+Timer(TeamConstThreads<7>[ShortNumber | 5]): <t> = 111.132ms, std = 0ms, 111.132ms <= t <= 111.132ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 1.08584ms, std = 0.785547ms, 0.163239ms <= t <= 6.09708ms (n=595)
+Timer(TeamPool<7>[ShortNumber | 5]): <t> = 96.785ms, std = 0ms, 96.785ms <= t <= 96.785ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<7>[ShortNumber | 5]): <t> = 4.43599s, std = 0s, 4.43599s <= t <= 4.43599s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<7>[ShortNumber | 5]): <t> = 128.116ms, std = 0ms, 128.116ms <= t <= 128.116ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 2.70831ms, std = 2.13179ms, 0.09272ms <= t <= 11.6231ms (n=595)
+Timer(TeamNewThreads<10>[ShortNumber | 5]): <t> = 0.410011s, std = 0s, 0.410011s <= t <= 0.410011s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 1.32203ms, std = 1.09734ms, 0.16704ms <= t <= 8.23186ms (n=595)
+Timer(TeamConstThreads<10>[ShortNumber | 5]): <t> = 112.736ms, std = 0ms, 112.736ms <= t <= 112.736ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 1.1362ms, std = 0.863111ms, 0.133433ms <= t <= 6.45587ms (n=595)
+Timer(TeamPool<10>[ShortNumber | 5]): <t> = 72.0683ms, std = 0ms, 72.0683ms <= t <= 72.0683ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<10>[ShortNumber | 5]): <t> = 5.73489s, std = 0s, 5.73489s <= t <= 5.73489s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<10>[ShortNumber | 5]): <t> = 122.977ms, std = 0ms, 122.977ms <= t <= 122.977ms (n=1)
+
+TeamAsync
+Timer(CalcCollatzSoloTimer): <t> = 2.05355ms, std = 1.7795ms, 0.156476ms <= t <= 11.13ms (n=595)
+Timer(TeamAsync<1>[ShortNumber | 5]): <t> = 50.9557ms, std = 0ms, 50.9557ms <= t <= 50.9557ms (n=1)
+
+TeamSolo
+Timer(CalcCollatzSoloTimer): <t> = 1.21899ms, std = 0.738875ms, 0.116788ms <= t <= 6.97644ms (n=2377)
+Timer(TeamSolo<1>[ShortNumber | 23]): <t> = 2.90038s, std = 0s, 2.90038s <= t <= 2.90038s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 2.50539ms, std = 2.02591ms, 0.122941ms <= t <= 10.3586ms (n=2377)
+Timer(TeamNewThreads<1>[ShortNumber | 23]): <t> = 6.51517s, std = 0s, 6.51517s <= t <= 6.51517s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 1.21017ms, std = 0.727849ms, 0.114774ms <= t <= 6.4954ms (n=2377)
+Timer(TeamConstThreads<1>[ShortNumber | 23]): <t> = 2.89267s, std = 0s, 2.89267s <= t <= 2.89267s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 1.21745ms, std = 0.738437ms, 0.13069ms <= t <= 5.70987ms (n=2377)
+Timer(TeamPool<1>[ShortNumber | 23]): <t> = 2.94027s, std = 0s, 2.94027s <= t <= 2.94027s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<1>[ShortNumber | 23]): <t> = 22.1882s, std = 0s, 22.1882s <= t <= 22.1882s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<1>[ShortNumber | 23]): <t> = 2.89679s, std = 0s, 2.89679s <= t <= 2.89679s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 2.99186ms, std = 2.18223ms, 0.153332ms <= t <= 10.8363ms (n=2377)
+Timer(TeamNewThreads<2>[ShortNumber | 23]): <t> = 5.01672s, std = 0s, 5.01672s <= t <= 5.01672s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 1.26173ms, std = 0.778887ms, 0.124522ms <= t <= 7.67961ms (n=2377)
+Timer(TeamConstThreads<2>[ShortNumber | 23]): <t> = 1.67344s, std = 0s, 1.67344s <= t <= 1.67344s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 1.2309ms, std = 0.745798ms, 0.122817ms <= t <= 6.23624ms (n=2377)
+Timer(TeamPool<2>[ShortNumber | 23]): <t> = 1.48862s, std = 0s, 1.48862s <= t <= 1.48862s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<2>[ShortNumber | 23]): <t> = 20.8608s, std = 0s, 20.8608s <= t <= 20.8608s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<2>[ShortNumber | 23]): <t> = 1.69978s, std = 0s, 1.69978s <= t <= 1.69978s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 3.40626ms, std = 2.25164ms, 0.213651ms <= t <= 10.5271ms (n=2377)
+Timer(TeamNewThreads<3>[ShortNumber | 23]): <t> = 4.42771s, std = 0s, 4.42771s <= t <= 4.42771s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 1.26282ms, std = 0.77322ms, 0.123612ms <= t <= 4.73892ms (n=2377)
+Timer(TeamConstThreads<3>[ShortNumber | 23]): <t> = 1.14219s, std = 0s, 1.14219s <= t <= 1.14219s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 1.28487ms, std = 0.804008ms, 0.166505ms <= t <= 7.16256ms (n=2377)
+Timer(TeamPool<3>[ShortNumber | 23]): <t> = 1.03819s, std = 0s, 1.03819s <= t <= 1.03819s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<3>[ShortNumber | 23]): <t> = 20.5016s, std = 0s, 20.5016s <= t <= 20.5016s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<3>[ShortNumber | 23]): <t> = 1.09965s, std = 0s, 1.09965s <= t <= 1.09965s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 3.45763ms, std = 2.26608ms, 0.22323ms <= t <= 10.5862ms (n=2377)
+Timer(TeamNewThreads<4>[ShortNumber | 23]): <t> = 3.5863s, std = 0s, 3.5863s <= t <= 3.5863s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 1.30337ms, std = 0.815325ms, 0.127372ms <= t <= 7.88787ms (n=2377)
+Timer(TeamConstThreads<4>[ShortNumber | 23]): <t> = 0.880511s, std = 0s, 0.880511s <= t <= 0.880511s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 1.31517ms, std = 0.811205ms, 0.139591ms <= t <= 6.40953ms (n=2377)
+Timer(TeamPool<4>[ShortNumber | 23]): <t> = 0.79855s, std = 0s, 0.79855s <= t <= 0.79855s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<4>[ShortNumber | 23]): <t> = 20.3965s, std = 0s, 20.3965s <= t <= 20.3965s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<4>[ShortNumber | 23]): <t> = 0.837175s, std = 0s, 0.837175s <= t <= 0.837175s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 3.41529ms, std = 2.25442ms, 0.204657ms <= t <= 11.3447ms (n=2377)
+Timer(TeamNewThreads<7>[ShortNumber | 23]): <t> = 2.40696s, std = 0s, 2.40696s <= t <= 2.40696s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 1.31461ms, std = 0.863987ms, 0.119189ms <= t <= 7.41004ms (n=2377)
+Timer(TeamConstThreads<7>[ShortNumber | 23]): <t> = 0.534385s, std = 0s, 0.534385s <= t <= 0.534385s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 1.26296ms, std = 0.780519ms, 0.158065ms <= t <= 6.57026ms (n=2377)
+Timer(TeamPool<7>[ShortNumber | 23]): <t> = 0.441537s, std = 0s, 0.441537s <= t <= 0.441537s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<7>[ShortNumber | 23]): <t> = 20.2251s, std = 0s, 20.2251s <= t <= 20.2251s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<7>[ShortNumber | 23]): <t> = 0.541632s, std = 0s, 0.541632s <= t <= 0.541632s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 3.44018ms, std = 2.27775ms, 0.223991ms <= t <= 11.7766ms (n=2377)
+Timer(TeamNewThreads<10>[ShortNumber | 23]): <t> = 1.85014s, std = 0s, 1.85014s <= t <= 1.85014s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 1.42388ms, std = 0.964203ms, 0.152668ms <= t <= 10.5161ms (n=2377)
+Timer(TeamConstThreads<10>[ShortNumber | 23]): <t> = 0.461848s, std = 0s, 0.461848s <= t <= 0.461848s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 1.36481ms, std = 0.845288ms, 0.163448ms <= t <= 6.90543ms (n=2377)
+Timer(TeamPool<10>[ShortNumber | 23]): <t> = 0.336685s, std = 0s, 0.336685s <= t <= 0.336685s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<10>[ShortNumber | 23]): <t> = 20.6731s, std = 0s, 20.6731s <= t <= 20.6731s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<10>[ShortNumber | 23]): <t> = 0.406004s, std = 0s, 0.406004s <= t <= 0.406004s (n=1)
+
+TeamAsync
+Timer(CalcCollatzSoloTimer): <t> = 1.99278ms, std = 1.36697ms, 0.163699ms <= t <= 10.4662ms (n=2377)
+Timer(TeamAsync<1>[ShortNumber | 23]): <t> = 145.471ms, std = 0ms, 145.471ms <= t <= 145.471ms (n=1)
+
+TeamSolo
+Timer(CalcCollatzSoloTimer): <t> = 1.40901ms, std = 0.622579ms, 0.987508ms <= t <= 2.4843ms (n=4)
+Timer(TeamSolo<1>[LongNumber | 2]): <t> = 5.71744ms, std = 0ms, 5.71744ms <= t <= 5.71744ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 3.445ms, std = 2.12859ms, 1.57416ms <= t <= 7.02946ms (n=4)
+Timer(TeamNewThreads<1>[LongNumber | 2]): <t> = 14.5815ms, std = 0ms, 14.5815ms <= t <= 14.5815ms (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 2.90746ms, std = 1.85242ms, 1.31856ms <= t <= 5.98941ms (n=4)
+Timer(TeamConstThreads<1>[LongNumber | 2]): <t> = 11.9341ms, std = 0ms, 11.9341ms <= t <= 11.9341ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 3.44309ms, std = 1.65707ms, 2.14886ms <= t <= 6.28957ms (n=4)
+Timer(TeamPool<1>[LongNumber | 2]): <t> = 14.2196ms, std = 0ms, 14.2196ms <= t <= 14.2196ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<1>[LongNumber | 2]): <t> = 39.944ms, std = 0ms, 39.944ms <= t <= 39.944ms (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<1>[LongNumber | 2]): <t> = 12.7103ms, std = 0ms, 12.7103ms <= t <= 12.7103ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 3.53214ms, std = 2.56817ms, 1.1005ms <= t <= 7.65241ms (n=4)
+Timer(TeamNewThreads<2>[LongNumber | 2]): <t> = 12.3528ms, std = 0ms, 12.3528ms <= t <= 12.3528ms (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 3.71714ms, std = 1.38982ms, 2.19059ms <= t <= 5.93829ms (n=4)
+Timer(TeamConstThreads<2>[LongNumber | 2]): <t> = 8.56182ms, std = 0ms, 8.56182ms <= t <= 8.56182ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 4.25622ms, std = 1.99728ms, 2.78574ms <= t <= 7.68684ms (n=4)
+Timer(TeamPool<2>[LongNumber | 2]): <t> = 9.82799ms, std = 0ms, 9.82799ms <= t <= 9.82799ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<2>[LongNumber | 2]): <t> = 31.6047ms, std = 0ms, 31.6047ms <= t <= 31.6047ms (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<2>[LongNumber | 2]): <t> = 17.3405ms, std = 0ms, 17.3405ms <= t <= 17.3405ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 2.33946ms, std = 0.806498ms, 1.50851ms <= t <= 3.24131ms (n=4)
+Timer(TeamNewThreads<3>[LongNumber | 2]): <t> = 5.418ms, std = 0ms, 5.418ms <= t <= 5.418ms (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 1.93842ms, std = 0.838649ms, 1.18607ms <= t <= 3.34681ms (n=4)
+Timer(TeamConstThreads<3>[LongNumber | 2]): <t> = 4.73197ms, std = 0ms, 4.73197ms <= t <= 4.73197ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 3.32118ms, std = 2.62235ms, 1.08117ms <= t <= 7.68371ms (n=4)
+Timer(TeamPool<3>[LongNumber | 2]): <t> = 8.04519ms, std = 0ms, 8.04519ms <= t <= 8.04519ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<3>[LongNumber | 2]): <t> = 27.3047ms, std = 0ms, 27.3047ms <= t <= 27.3047ms (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<3>[LongNumber | 2]): <t> = 17.0302ms, std = 0ms, 17.0302ms <= t <= 17.0302ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 3.66141ms, std = 1.42522ms, 2.0071ms <= t <= 5.89744ms (n=4)
+Timer(TeamNewThreads<4>[LongNumber | 2]): <t> = 6.53512ms, std = 0ms, 6.53512ms <= t <= 6.53512ms (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 3.07808ms, std = 0.217819ms, 2.73842ms <= t <= 3.34318ms (n=4)
+Timer(TeamConstThreads<4>[LongNumber | 2]): <t> = 3.94723ms, std = 0ms, 3.94723ms <= t <= 3.94723ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 3.87016ms, std = 2.37313ms, 1.10271ms <= t <= 7.63414ms (n=4)
+Timer(TeamPool<4>[LongNumber | 2]): <t> = 8.06278ms, std = 0ms, 8.06278ms <= t <= 8.06278ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<4>[LongNumber | 2]): <t> = 19.7005ms, std = 0ms, 19.7005ms <= t <= 19.7005ms (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<4>[LongNumber | 2]): <t> = 15.1873ms, std = 0ms, 15.1873ms <= t <= 15.1873ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 2.918ms, std = 1.48847ms, 0.996639ms <= t <= 5.15138ms (n=4)
+Timer(TeamNewThreads<7>[LongNumber | 2]): <t> = 5.56529ms, std = 0ms, 5.56529ms <= t <= 5.56529ms (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 3.98294ms, std = 1.93658ms, 1.94037ms <= t <= 7.14287ms (n=4)
+Timer(TeamConstThreads<7>[LongNumber | 2]): <t> = 7.42022ms, std = 0ms, 7.42022ms <= t <= 7.42022ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 3.67341ms, std = 2.04227ms, 1.08142ms <= t <= 6.76319ms (n=4)
+Timer(TeamPool<7>[LongNumber | 2]): <t> = 7.0932ms, std = 0ms, 7.0932ms <= t <= 7.0932ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<7>[LongNumber | 2]): <t> = 18.4526ms, std = 0ms, 18.4526ms <= t <= 18.4526ms (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<7>[LongNumber | 2]): <t> = 17.1013ms, std = 0ms, 17.1013ms <= t <= 17.1013ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 3.86747ms, std = 2.42107ms, 1.21673ms <= t <= 7.7674ms (n=4)
+Timer(TeamNewThreads<10>[LongNumber | 2]): <t> = 8.10165ms, std = 0ms, 8.10165ms <= t <= 8.10165ms (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 2.88353ms, std = 0.892688ms, 1.4633ms <= t <= 3.7374ms (n=4)
+Timer(TeamConstThreads<10>[LongNumber | 2]): <t> = 4.014ms, std = 0ms, 4.014ms <= t <= 4.014ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 3.13098ms, std = 0.343804ms, 2.70924ms <= t <= 3.6679ms (n=4)
+Timer(TeamPool<10>[LongNumber | 2]): <t> = 4.01157ms, std = 0ms, 4.01157ms <= t <= 4.01157ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<10>[LongNumber | 2]): <t> = 19.5848ms, std = 0ms, 19.5848ms <= t <= 19.5848ms (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<10>[LongNumber | 2]): <t> = 16.0907ms, std = 0ms, 16.0907ms <= t <= 16.0907ms (n=1)
+
+TeamAsync
+Timer(CalcCollatzSoloTimer): <t> = 2.73987ms, std = 0.719992ms, 1.70271ms <= t <= 3.67301ms (n=4)
+Timer(TeamAsync<1>[LongNumber | 2]): <t> = 4.08647ms, std = 0ms, 4.08647ms <= t <= 4.08647ms (n=1)
+
+TeamSolo
+Timer(CalcCollatzSoloTimer): <t> = 5.17729ms, std = 3.25082ms, 1.47831ms <= t <= 11.3447ms (n=7)
+Timer(TeamSolo<1>[LongNumber | 5]): <t> = 36.2862ms, std = 0ms, 36.2862ms <= t <= 36.2862ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 6.57233ms, std = 2.63959ms, 3.66946ms <= t <= 12.0079ms (n=7)
+Timer(TeamNewThreads<1>[LongNumber | 5]): <t> = 47.5682ms, std = 0ms, 47.5682ms <= t <= 47.5682ms (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 6.72545ms, std = 4.82956ms, 1.31042ms <= t <= 15.6746ms (n=7)
+Timer(TeamConstThreads<1>[LongNumber | 5]): <t> = 47.5201ms, std = 0ms, 47.5201ms <= t <= 47.5201ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 6.71303ms, std = 2.66456ms, 3.47888ms <= t <= 11.3004ms (n=7)
+Timer(TeamPool<1>[LongNumber | 5]): <t> = 47.5675ms, std = 0ms, 47.5675ms <= t <= 47.5675ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<1>[LongNumber | 5]): <t> = 89.2133ms, std = 0ms, 89.2133ms <= t <= 89.2133ms (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<1>[LongNumber | 5]): <t> = 53.9764ms, std = 0ms, 53.9764ms <= t <= 53.9764ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 8.75907ms, std = 5.49211ms, 2.74097ms <= t <= 18.6896ms (n=7)
+Timer(TeamNewThreads<2>[LongNumber | 5]): <t> = 48.2648ms, std = 0ms, 48.2648ms <= t <= 48.2648ms (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 5.41687ms, std = 3.60691ms, 1.1748ms <= t <= 11.5644ms (n=7)
+Timer(TeamConstThreads<2>[LongNumber | 5]): <t> = 28.1997ms, std = 0ms, 28.1997ms <= t <= 28.1997ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 7.99175ms, std = 2.46799ms, 3.72519ms <= t <= 11.4229ms (n=7)
+Timer(TeamPool<2>[LongNumber | 5]): <t> = 32.4816ms, std = 0ms, 32.4816ms <= t <= 32.4816ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<2>[LongNumber | 5]): <t> = 118.282ms, std = 0ms, 118.282ms <= t <= 118.282ms (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<2>[LongNumber | 5]): <t> = 38.432ms, std = 0ms, 38.432ms <= t <= 38.432ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 8.21369ms, std = 5.17545ms, 1.93552ms <= t <= 15.7535ms (n=7)
+Timer(TeamNewThreads<3>[LongNumber | 5]): <t> = 41.6659ms, std = 0ms, 41.6659ms <= t <= 41.6659ms (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 6.22893ms, std = 4.96122ms, 1.58475ms <= t <= 17.3247ms (n=7)
+Timer(TeamConstThreads<3>[LongNumber | 5]): <t> = 17.8529ms, std = 0ms, 17.8529ms <= t <= 17.8529ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 9.8876ms, std = 3.52073ms, 3.70885ms <= t <= 14.6941ms (n=7)
+Timer(TeamPool<3>[LongNumber | 5]): <t> = 27.4991ms, std = 0ms, 27.4991ms <= t <= 27.4991ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<3>[LongNumber | 5]): <t> = 63.4835ms, std = 0ms, 63.4835ms <= t <= 63.4835ms (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<3>[LongNumber | 5]): <t> = 36.3229ms, std = 0ms, 36.3229ms <= t <= 36.3229ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 9.45016ms, std = 6.11662ms, 2.49175ms <= t <= 22.2375ms (n=7)
+Timer(TeamNewThreads<4>[LongNumber | 5]): <t> = 33.1424ms, std = 0ms, 33.1424ms <= t <= 33.1424ms (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 7.53047ms, std = 6.21335ms, 2.9246ms <= t <= 22.2243ms (n=7)
+Timer(TeamConstThreads<4>[LongNumber | 5]): <t> = 22.8041ms, std = 0ms, 22.8041ms <= t <= 22.8041ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 10.9499ms, std = 4.47912ms, 2.87048ms <= t <= 17.0097ms (n=7)
+Timer(TeamPool<4>[LongNumber | 5]): <t> = 28.1425ms, std = 0ms, 28.1425ms <= t <= 28.1425ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<4>[LongNumber | 5]): <t> = 87.1808ms, std = 0ms, 87.1808ms <= t <= 87.1808ms (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<4>[LongNumber | 5]): <t> = 36.7537ms, std = 0ms, 36.7537ms <= t <= 36.7537ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 11.947ms, std = 7.54684ms, 1.15089ms <= t <= 22.4883ms (n=7)
+Timer(TeamNewThreads<7>[LongNumber | 5]): <t> = 23.158ms, std = 0ms, 23.158ms <= t <= 23.158ms (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 8.193ms, std = 3.39176ms, 2.43517ms <= t <= 12.3163ms (n=7)
+Timer(TeamConstThreads<7>[LongNumber | 5]): <t> = 12.9497ms, std = 0ms, 12.9497ms <= t <= 12.9497ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 11.0683ms, std = 6.92221ms, 3.11893ms <= t <= 22.0235ms (n=7)
+Timer(TeamPool<7>[LongNumber | 5]): <t> = 22.7246ms, std = 0ms, 22.7246ms <= t <= 22.7246ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<7>[LongNumber | 5]): <t> = 46.8685ms, std = 0ms, 46.8685ms <= t <= 46.8685ms (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<7>[LongNumber | 5]): <t> = 42.1106ms, std = 0ms, 42.1106ms <= t <= 42.1106ms (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 9.53552ms, std = 7.24149ms, 2.98592ms <= t <= 21.9507ms (n=7)
+Timer(TeamNewThreads<10>[LongNumber | 5]): <t> = 22.6497ms, std = 0ms, 22.6497ms <= t <= 22.6497ms (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 9.86779ms, std = 7.67866ms, 3.12875ms <= t <= 23.3476ms (n=7)
+Timer(TeamConstThreads<10>[LongNumber | 5]): <t> = 24.0834ms, std = 0ms, 24.0834ms <= t <= 24.0834ms (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 13.5923ms, std = 6.76816ms, 1.30431ms <= t <= 22.7972ms (n=7)
+Timer(TeamPool<10>[LongNumber | 5]): <t> = 23.5472ms, std = 0ms, 23.5472ms <= t <= 23.5472ms (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<10>[LongNumber | 5]): <t> = 41.0339ms, std = 0ms, 41.0339ms <= t <= 41.0339ms (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<10>[LongNumber | 5]): <t> = 41.9864ms, std = 0ms, 41.9864ms <= t <= 41.9864ms (n=1)
+
+TeamAsync
+Timer(CalcCollatzSoloTimer): <t> = 8.18229ms, std = 4.14886ms, 2.98802ms <= t <= 14.851ms (n=7)
+Timer(TeamAsync<1>[LongNumber | 5]): <t> = 15.402ms, std = 0ms, 15.402ms <= t <= 15.402ms (n=1)
+
+TeamSolo
+Timer(CalcCollatzSoloTimer): <t> = 122.463ms, std = 45.5641ms, 52.7839ms <= t <= 196.566ms (n=25)
+Timer(TeamSolo<1>[LongNumber | 23]): <t> = 3.06183s, std = 0s, 3.06183s <= t <= 3.06183s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 124.237ms, std = 48.1631ms, 56.4152ms <= t <= 227.199ms (n=25)
+Timer(TeamNewThreads<1>[LongNumber | 23]): <t> = 3.11292s, std = 0s, 3.11292s <= t <= 3.11292s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 124.309ms, std = 47.1586ms, 52.4264ms <= t <= 199.358ms (n=25)
+Timer(TeamConstThreads<1>[LongNumber | 23]): <t> = 3.10843s, std = 0s, 3.10843s <= t <= 3.10843s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 122.66ms, std = 48.2706ms, 50.0105ms <= t <= 204.886ms (n=25)
+Timer(TeamPool<1>[LongNumber | 23]): <t> = 3.06752s, std = 0s, 3.06752s <= t <= 3.06752s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<1>[LongNumber | 23]): <t> = 3.51345s, std = 0s, 3.51345s <= t <= 3.51345s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<1>[LongNumber | 23]): <t> = 3.0836s, std = 0s, 3.0836s <= t <= 3.0836s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 128.73ms, std = 45.828ms, 47.1903ms <= t <= 209.269ms (n=25)
+Timer(TeamNewThreads<2>[LongNumber | 23]): <t> = 1.80674s, std = 0s, 1.80674s <= t <= 1.80674s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 124.216ms, std = 46.1762ms, 51.6736ms <= t <= 200.238ms (n=25)
+Timer(TeamConstThreads<2>[LongNumber | 23]): <t> = 1.93464s, std = 0s, 1.93464s <= t <= 1.93464s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 122.879ms, std = 46.3451ms, 56.3893ms <= t <= 202.929ms (n=25)
+Timer(TeamPool<2>[LongNumber | 23]): <t> = 1.55166s, std = 0s, 1.55166s <= t <= 1.55166s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<2>[LongNumber | 23]): <t> = 3.22152s, std = 0s, 3.22152s <= t <= 3.22152s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<2>[LongNumber | 23]): <t> = 1.90485s, std = 0s, 1.90485s <= t <= 1.90485s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 128.402ms, std = 46.0352ms, 57.3908ms <= t <= 204.603ms (n=25)
+Timer(TeamNewThreads<3>[LongNumber | 23]): <t> = 1.30873s, std = 0s, 1.30873s <= t <= 1.30873s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 124.029ms, std = 47.7992ms, 46.0725ms <= t <= 201.012ms (n=25)
+Timer(TeamConstThreads<3>[LongNumber | 23]): <t> = 1.26995s, std = 0s, 1.26995s <= t <= 1.26995s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 129.929ms, std = 52.6226ms, 56.9859ms <= t <= 236.428ms (n=25)
+Timer(TeamPool<3>[LongNumber | 23]): <t> = 1.1538s, std = 0s, 1.1538s <= t <= 1.1538s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<3>[LongNumber | 23]): <t> = 3.18961s, std = 0s, 3.18961s <= t <= 3.18961s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<3>[LongNumber | 23]): <t> = 1.31455s, std = 0s, 1.31455s <= t <= 1.31455s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 141.44ms, std = 52.8505ms, 59.9892ms <= t <= 221.359ms (n=25)
+Timer(TeamNewThreads<4>[LongNumber | 23]): <t> = 1.18476s, std = 0s, 1.18476s <= t <= 1.18476s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 129.137ms, std = 48.1076ms, 52.256ms <= t <= 216.265ms (n=25)
+Timer(TeamConstThreads<4>[LongNumber | 23]): <t> = 1.10332s, std = 0s, 1.10332s <= t <= 1.10332s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 130.27ms, std = 51.4292ms, 55.9833ms <= t <= 230.304ms (n=25)
+Timer(TeamPool<4>[LongNumber | 23]): <t> = 0.892136s, std = 0s, 0.892136s <= t <= 0.892136s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<4>[LongNumber | 23]): <t> = 3.17083s, std = 0s, 3.17083s <= t <= 3.17083s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<4>[LongNumber | 23]): <t> = 1.06511s, std = 0s, 1.06511s <= t <= 1.06511s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 134.891ms, std = 47.3511ms, 57.4545ms <= t <= 213.623ms (n=25)
+Timer(TeamNewThreads<7>[LongNumber | 23]): <t> = 0.68588s, std = 0s, 0.68588s <= t <= 0.68588s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 127.913ms, std = 48.6071ms, 50.3994ms <= t <= 201.452ms (n=25)
+Timer(TeamConstThreads<7>[LongNumber | 23]): <t> = 0.773634s, std = 0s, 0.773634s <= t <= 0.773634s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 130.583ms, std = 45.2989ms, 54.9676ms <= t <= 210.028ms (n=25)
+Timer(TeamPool<7>[LongNumber | 23]): <t> = 0.566827s, std = 0s, 0.566827s <= t <= 0.566827s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<7>[LongNumber | 23]): <t> = 3.02709s, std = 0s, 3.02709s <= t <= 3.02709s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<7>[LongNumber | 23]): <t> = 0.846509s, std = 0s, 0.846509s <= t <= 0.846509s (n=1)
+
+ThreadNewThreads
+Timer(CalcCollatzSoloTimer): <t> = 138.243ms, std = 47.1432ms, 62.3474ms <= t <= 217.273ms (n=25)
+Timer(TeamNewThreads<10>[LongNumber | 23]): <t> = 0.515012s, std = 0s, 0.515012s <= t <= 0.515012s (n=1)
+
+TeamConstThreads
+Timer(CalcCollatzSoloTimer): <t> = 132.553ms, std = 49.7935ms, 53.1621ms <= t <= 219.35ms (n=25)
+Timer(TeamConstThreads<10>[LongNumber | 23]): <t> = 0.597526s, std = 0s, 0.597526s <= t <= 0.597526s (n=1)
+
+TeamPool
+Timer(CalcCollatzSoloTimer): <t> = 138.501ms, std = 41.319ms, 58.579ms <= t <= 228.783ms (n=25)
+Timer(TeamPool<10>[LongNumber | 23]): <t> = 0.452219s, std = 0s, 0.452219s <= t <= 0.452219s (n=1)
+
+TeamNewProcesses
+Timer(TeamNewProcesses<10>[LongNumber | 23]): <t> = 2.64111s, std = 0s, 2.64111s <= t <= 2.64111s (n=1)
+
+TeamConstProcesses
+Timer(TeamConstProcesses<10>[LongNumber | 23]): <t> = 0.59535s, std = 0s, 0.59535s <= t <= 0.59535s (n=1)
+
+TeamAsync
+Timer(CalcCollatzSoloTimer): <t> = 153.792ms, std = 54.9072ms, 65.2221ms <= t <= 253.057ms (n=25)
+Timer(TeamAsync<1>[LongNumber | 23]): <t> = 0.255208s, std = 0s, 0.255208s <= t <= 0.255208s (n=1)
+Timer(Total): <t> = 24.0334m, std = 0m, 24.0334m <= t <= 24.0334m (n=1)

@@ -19,11 +19,18 @@ Timer(TeamAsync<1>[SameNumber | 2]): <t> = 73.4576ms, std = 0ms, 73.4576ms <= t 
 
 def command_line_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("name", help="Name of the file to process")
-    parser.add_argument("save", help="Name of the file to save")
+    parser.add_argument("my1", help="Name of the file to process")
+    parser.add_argument("my2", help="Name of the file to process")
+    parser.add_argument("my3", help="Name of the file to process")
+
+    parser.add_argument("s1", help="Name of the file to process")
+    parser.add_argument("s2", help="Name of the file to process")
+    parser.add_argument("s3", help="Name of the file to process")
+
+    #parser.add_argument("save", help="Name of the file to save")
     args = parser.parse_args()
 
-    return args.name, args.save
+    return args.my1, args.my2, args.my3, args.s1, args.s2, args.s3
 
 def open_file_return_list_of_lines(path):
     with open(path) as op:
@@ -119,16 +126,30 @@ def prepare_stats(lines):
     total[-1] = int(total[-1])
     final['Total'] = {}
     final['Total']['stats'] = total
-    
+
     print(total)
 
+    return final
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    path, name = command_line_args()
-    lines = open_file_return_list_of_lines(path)
+    m1, m2, m3, s1, s2, s3 = command_line_args()
+
+    m1_res = open_file_return_list_of_lines(m1)
+    m2_res = open_file_return_list_of_lines(m2)
+    m3_res = open_file_return_list_of_lines(m3)
+
+    s1_res = open_file_return_list_of_lines(s1)
+    s2_res = open_file_return_list_of_lines(s2)
+    s3_res = open_file_return_list_of_lines(s3)
   #  print_lines(lines)
  #   print(lines)
-    prepare_stats(lines)
+    m1_stats = prepare_stats(m1_res)
+    m2_stats = prepare_stats(m2_res)
+    m3_stats = prepare_stats(m3_res)
+
+    s1_stats = prepare_stats(s1_res)
+    s2_stats = prepare_stats(s2_res)
+    s3_stats = prepare_stats(s3_res)
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
