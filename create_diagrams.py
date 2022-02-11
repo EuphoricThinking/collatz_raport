@@ -93,12 +93,14 @@ def prepare_stats(lines):
             comp_name = extracted_outer[2]
 
             if comp_name not in final[current_team].keys():
-                final[current_team][comp_name] = {}
+                final[current_team][comp_name] = []
 
             current_comp = final[current_team][comp_name]
-            current_comp['num_workers'] = extracted_outer[0]
-            current_comp['seed'] = extracted_outer[1]
-            current_comp['stats'] = stats
+            # current_comp['num_workers'] = extracted_outer[0]
+            # current_comp['seed'] = extracted_outer[1]
+            # current_comp['stats'] = stats
+            #current_comp[extracted_outer[0]] = [extracted_outer[1], stats]
+            current_comp.append([extracted_outer[0], extracted_outer[1], stats])
             print(extracted_outer)
             index += 3
 
@@ -113,12 +115,14 @@ def prepare_stats(lines):
             comp_name = extracted_outer[2]
 
             if comp_name not in final[current_team].keys():
-                final[current_team][comp_name] = {}
+                final[current_team][comp_name] = []
 
             current_comp = final[current_team][comp_name]
-            current_comp['num_workers'] = extracted_outer[0]
-            current_comp['seed'] = extracted_outer[1]
-            current_comp['stats'] = stats
+            # current_comp['num_workers'] = extracted_outer[0]
+            # current_comp['seed'] = extracted_outer[1]
+            # current_comp['stats'] = stats
+            #current_comp[extracted_outer[0]] = [extracted_outer[1], stats]
+            current_comp.append([extracted_outer[0], extracted_outer[1], stats])
 
             print(extracted_outer)
             index += 2
@@ -155,6 +159,14 @@ def create_total_diagram(m1, m2, m3, s1, s2, s3):
         label.set_visible(False)
     plt.legend(loc='center right')
     plt.show()
+
+def plot_contest_for_team(contest, m1, s1, team, stats):
+    plt.figure()
+    team_stats = stats[team]
+    team_contest = team_stats[contest]
+
+    #for workers in team_contest
+
 
 if __name__ == '__main__':
     m1, m2, m3, s1, s2, s3 = command_line_args()
