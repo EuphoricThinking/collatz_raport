@@ -101,7 +101,10 @@ def prepare_stats(lines):
             # current_comp['seed'] = extracted_outer[1]
             # current_comp['stats'] = stats
             #current_comp[extracted_outer[0]] = [extracted_outer[1], stats]
-            current_comp.append([extracted_outer[0], extracted_outer[1], stats])
+            unitNum = outer_stats.split(',')[1].split()[2]
+            unit = re.findall('\D+', unitNum)
+
+            current_comp.append([extracted_outer[0], extracted_outer[1], stats, unit[0]])
             print(extracted_outer)
             index += 3
 
@@ -111,7 +114,7 @@ def prepare_stats(lines):
             extracted_outer[-1] = int(extracted_outer[-1])
 
             unitNum = outer_stats.split(',')[1].split()[2]
-            unit = re.findall('\d+', unitNum)
+            unit = re.findall('\D+', unitNum)
             stats = {}
             stats['solo'] = None
             stats['total'] = extracted_outer[3:]
@@ -125,7 +128,7 @@ def prepare_stats(lines):
             # current_comp['seed'] = extracted_outer[1]
             # current_comp['stats'] = stats
             #current_comp[extracted_outer[0]] = [extracted_outer[1], stats]
-            current_comp.append([extracted_outer[0], extracted_outer[1], stats]) #num threads, seed, {solo, total}
+            current_comp.append([extracted_outer[0], extracted_outer[1], stats, unit[0]]) #num threads, seed, {solo, total}
 
             print(extracted_outer)
             index += 2
