@@ -267,15 +267,32 @@ def compare_mean_contests(stats, contest_name):
             to_mean = []
             for record in cur_team:
                 if record[1] == seed:
-                    print('hete', record)
+                    #print('hete', record)
                     to_mean.append(convert_to_ms(record[2]['total'][0], record[-1]))
-            print(to_mean)
+  #          print(to_mean)
             if team not in meansTeams.keys():
                 meansTeams[team] = []
             meansTeams[team].append([seed, round(statistics.mean(to_mean), 4)])
 
     for key, val in meansTeams.items():
         print(key, val)
+
+    colours = ['r', 'b', 'c', 'g', 'k', 'y', 'm']
+    plt.title(contest_name + " - średni czas dla wszystkich zespołów")
+    plt.xlabel("Dane inicjujące")
+    plt.ylabel("Czas [ms]")
+
+    x_list = [str(i) for i in setSeeds]
+    for ind, team in enumerate(meansTeams.keys()):
+        to_plot = []
+        team_means = meansTeams[team]
+        for rec in team_means:
+            to_plot.append(rec[1])
+        print(ind, team)
+        plt.plot(x_list, to_plot, colours[ind] + '-*', label = team)
+
+    plt.legend(loc='upper left')
+    plt.show()
 
 if __name__ == '__main__':
     m1, m2, m3, s1, s2, s3 = command_line_args()
