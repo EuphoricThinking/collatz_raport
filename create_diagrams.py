@@ -58,7 +58,7 @@ def prepare_stats(lines):
     range_lines = len(lines)
     index = 0
 
-    while index < range_lines:
+    while index < range_lines - 1:
         current_team = lines[index]
         print(current_team)
 
@@ -73,10 +73,13 @@ def prepare_stats(lines):
             extracted_outer[-1] = int(extracted_outer[-1])
             print(extracted_outer)
             index += 3
-            break
 
         else:
-            index +=2
+            outer_stats = lines[index + 1]
+            extracted_outer = extract_outer_data(outer_stats)
+            extracted_outer[-1] = int(extracted_outer[-1])
+            print(extracted_outer)
+            index += 2
 
 
 # Press the green button in the gutter to run the script.
