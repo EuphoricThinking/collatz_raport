@@ -283,15 +283,19 @@ def compare_mean_contests(stats, contest_name):
     plt.ylabel("Czas [ms]")
 
     x_list = [str(i) for i in setSeeds]
+    means_all = []
     for ind, team in enumerate(meansTeams.keys()):
         to_plot = []
         team_means = meansTeams[team]
         for rec in team_means:
             to_plot.append(rec[1])
+            means_all.append(rec[1])
         print(ind, team)
         plt.plot(x_list, to_plot, colours[ind] + '-*', label = team)
 
     plt.legend(loc='upper left')
+
+    plt.tick_params(labelright=True)
     plt.show()
 
 if __name__ == '__main__':
